@@ -25,14 +25,14 @@
 
 .title {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-text);
   margin-bottom: 10px;
 }
 
 .description {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--color-text);
   margin-bottom: 15px;
 }
@@ -65,7 +65,7 @@
   text-decoration: none;
   color: var(--color-text);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   background: var(--color-primary);
   padding: 8px 15px;
   border-radius: 5px;

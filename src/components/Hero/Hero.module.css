@@ -25,12 +25,10 @@
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 33px;
-  font-family: var(--font-roboto);
 }
 
 .description {
   font-size: 22px;
-  font-family: var(--font-roboto);
   margin-bottom: 52px;
 }
 
@@ -60,8 +58,8 @@
 }
 
 .heroImg {
-  width: 300px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
   margin-top: 5%; /* Add margin to the top */
   margin-left: 5%; /* Add margin to the left */
   z-index: 1;
@@ -112,6 +110,7 @@
   z-index: 0;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
@@ -119,5 +118,35 @@
 
   .content {
     align-items: center;
+  }
+
+  .heroImg {
+    width: 200px; /* Adjust width for smaller screens */
+    height: 200px; /* Adjust height for smaller screens */
+    margin-top: 20px; /* Adjust margin to fit better on smaller screens */
+    margin-left: 0; /* Center image on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroImg {
+    width: 150px; /* Further adjust width for very small screens */
+    height: 150px; /* Further adjust height for very small screens */
+    margin-top: 100px; /* Further adjust margin to fit better on very small screens */
+    margin-left: 0; /* Center image on very small screens */
+  }
+
+  .title {
+    font-size: 28px; 
+
+  }
+
+  .description {
+    font-size: 16px; /* Adjust description size for very small screens */
+  }
+
+  .viewWorkBtn {
+    font-size: 16px; /* Adjust button font size for very small screens */
+    padding: 10px 20px; /* Adjust button padding for very small screens */
   }
 }

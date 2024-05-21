@@ -1,16 +1,18 @@
+@import "../../vars.css";
+
 .container {
     position: relative;
     background-color: rgba(12, 12, 12, 0.6);
     border-radius: 15px;
     padding: 50px;
-    margin-top: 129px;
+    margin-top: 10%;
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
   }
   
   .title {
-    color: var(--color-text);
+    color: var(--color-primary);
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 1.75px;
@@ -43,13 +45,13 @@
   }
   
   .card h3 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     margin-bottom: 10px;
   }
   
   .card p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 5px 0;
   }
   
@@ -71,3 +73,31 @@
     }
   }
   
+@media screen and (max-width: 480px) {
+.container {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+}
